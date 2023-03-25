@@ -1,0 +1,71 @@
+@import '../../index.css';
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	flex-direction: column;
+	background-color: royalblue;
+}
+
+.container {
+	background-color: #fff;
+	width: 700px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: start;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.input {
+	padding: 8px 10px;
+	outline: none;
+	border: 1px solid black;
+}
+
+.input::placeholder {
+	color: rgb(180, 180, 180);
+}
+
+.registration {
+	text-decoration: none;
+	background-color: orange;
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.title {
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.label {
+	color:rgb(171, 166, 124);
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.error {
+	color: red;
+}

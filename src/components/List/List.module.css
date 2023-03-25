@@ -1,0 +1,6 @@
+.info {
+	display: flex;
+	gap: 15px;	
+	flex-wrap: wrap;
+	align-items: start;
+}

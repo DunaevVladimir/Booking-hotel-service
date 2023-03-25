@@ -1,0 +1,122 @@
+[
+	{
+		"title": "Номер 1",
+		"price": 20000,
+		"area": 40,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "гостиничный номер"
+	},
+	{
+		"title": "Номер 4",
+		"price": 40000,
+		"area": 35,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "гостиничный номер"
+	},
+	{
+		"title": "Номер 2",
+		"price": 20000,
+		"area": 40,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "квартиры"
+	},
+	{
+		"title": "Номер 3",
+		"price": 20000,
+		"area": 40,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "комната"
+	},
+	{
+		"title": "Номер 6",
+		"price": 10000,
+		"area": 70,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "комната"
+	},
+	{
+		"title": "Номер 5",
+		"price": 60000,
+		"area": 50,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "квартиры"
+	},
+	{
+		"title": "Номер 7",
+		"price": 15000,
+		"area": 15,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "гостиничный номер"
+	},
+	{
+		"title": "Номер 8",
+		"price": 10000,
+		"area": 20,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "квартиры"
+	},
+	{
+		"title": "Номер 10",
+		"price": 70000,
+		"area": 55,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "гостиничный номер"
+	},
+	{
+		"title": "Номер 9",
+		"price": 30000,
+		"area": 30,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "комната"
+	},
+	{
+		"title": "Номер 11",
+		"price": 150000,
+		"area": 120,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "квартиры"
+	},
+	{
+		"title": "Номер 14",
+		"price": 30000,
+		"area": 33,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "квартиры"
+	},
+	{
+		"title": "Номер 12",
+		"price": 5000,
+		"area": 12,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "комната"
+	},
+	{
+		"title": "Номер 13",
+		"price": 40000,
+		"area": 40,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "гостиничный номер"
+	},
+	{
+		"title": "Номер 15",
+		"price": 50000,
+		"area": 64,
+		"adress": "Адрес",
+		"description": "Описание",
+		"type": "комната"
+	}
+]

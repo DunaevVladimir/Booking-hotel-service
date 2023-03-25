@@ -1,0 +1,54 @@
+.main {
+	padding: 10px;
+	display: flex;
+	gap: 30px;
+	align-items: start;
+}
+
+.registration {
+
+}
+
+.input {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.box {
+	display: flex;
+	gap: 10px;
+}
+
+.title {
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	padding-bottom: 10px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.side {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}

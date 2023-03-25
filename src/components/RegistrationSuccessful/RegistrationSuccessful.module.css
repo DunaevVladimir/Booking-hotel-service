@@ -1,0 +1,29 @@
+@import '../../index.css';
+
+.content {
+	background-color: royalblue;
+	color: #fff;	
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.link {
+	color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+

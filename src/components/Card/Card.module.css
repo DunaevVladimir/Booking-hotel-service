@@ -1,0 +1,48 @@
+.card{
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: start;
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	width: 50%;
+}
+
+.mainimage {
+	flex: 0 0 50%;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.title {
+	padding: 5px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.smallimages {
+	display: flex;
+}
+
+.smallimage {
+	flex: 0 0 33.33%;
+}

@@ -1,0 +1,30 @@
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.label {
+	color:rgb(199, 188, 88);
+}
+
+.input {
+	padding: 8px 10px;
+	outline: none;
+	border: 1px solid black;
+}
+
+.input::placeholder {
+	color: rgb(180, 180, 180);
+}
+
+span {
+	color: red;
+	padding: 5px;
+	display: none;
+	width: 100%;
+}
+
+input:invalid[focused="true"] ~ span{
+	display: block;
+}
