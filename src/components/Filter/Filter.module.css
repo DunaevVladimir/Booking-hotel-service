@@ -1,0 +1,66 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	border: 1px solid black;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.filter {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	position: relative;
+}
+
+.input {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.title {
+	font-weight: 700;
+}
+
+.checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.label {
+	user-select:  none;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	cursor: pointer;
+}
+
+.label::before {
+	align-self: flex-start;
+	flex: 0 0 16px;
+	height: 16px;
+	content: "";
+	background-color: #FCFCFC;
+	border-radius: 3px;
+	border: 2px solid black;
+	position: relative;
+	top: 2px;
+}
+
+.checkbox:checked + .label::before{
+	background-image: url(../../images/checked.svg);
+	background-size: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
