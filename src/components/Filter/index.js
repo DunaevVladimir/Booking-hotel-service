@@ -15,7 +15,6 @@ export default function Filter(props) {
 
 	const onSubmit = (e) => {
 		e.preventDefault();
-		console.log('yes', filter);
 		props.filterOut(filter);
 	}
 

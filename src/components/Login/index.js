@@ -16,7 +16,6 @@ export default function NLogin() {
 	});
 
 	const onSubmit = (inputs) => {
-		console.log(inputs);
 		fetch("http://localhost:5000/login", {
 			method: "POST",
 			crossDomain: true,
@@ -30,7 +29,6 @@ export default function NLogin() {
 			}),
 		}).then((res) => res.json())
 			.then((data) => {
-				console.log(data, "UserRegister");
 				if (data.status === "ok") {
 					window.localStorage.setItem("token", data.data);
 					window.location.href = "./usercard";

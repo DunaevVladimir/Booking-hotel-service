@@ -24,7 +24,6 @@ export default function Home() {
 
 	function filterOut(inputs) {
 		const { priceFrom, priceTo, areaFrom, areaTo, hotel, appartment, room } = inputs;
-		console.log(inputs);
 		const filterSetting = {
 			priceFrom: (priceFrom === 0 || priceFrom === undefined) ? 0 : priceFrom,
 			priceTo: (priceTo === 0 || priceTo === undefined) ? 10000000 : priceTo,
@@ -49,7 +48,6 @@ export default function Home() {
 		}).then((res) => res.json())
 			.then((data) => {
 				setData(data.data);
-				console.log(data.data);
 			})
 	}
 

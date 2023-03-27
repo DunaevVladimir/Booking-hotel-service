@@ -31,7 +31,6 @@ export default function ChangeInfo() {
 			}),
 		}).then((res) => res.json())
 			.then((data) => {
-				console.log(data);
 				window.localStorage.setItem("token", data.token);
 			}).finally(() => {
 				window.location.href = "../usercard";

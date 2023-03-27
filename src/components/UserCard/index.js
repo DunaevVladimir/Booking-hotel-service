@@ -21,7 +21,6 @@ export default function UserCard() {
 			}),
 		}).then((res) => res.json())
 			.then((data) => {
-				console.log(data, "UserData");
 				setCard(data.data);
 			})
 	}, []);

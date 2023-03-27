@@ -31,7 +31,6 @@ export default function NRegistration() {
 		}).then((res) => res.json())
 			.then((data) => {
 				if (data.status === "ok") {
-					console.log(data, "UserRegister");
 					window.location.href = "./registrationSuccessful";
 				}
 			})
