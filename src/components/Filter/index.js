@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Filter.module.css';
+import '../../styles/form.scss';
 import Button from '../Button';
 
 export default function Filter(props) {

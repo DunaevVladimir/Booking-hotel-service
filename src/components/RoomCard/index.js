@@ -24,7 +24,7 @@ export default class RoomCard extends React.Component {
 					<div className={styles.title}>{this.state.title}</div>
 					<div className={styles.gallery}>
 						<div className={styles.mainimage}>
-							<img className={styles.img} src={require("../../images/1.webp")} />
+							<img className={styles.img} src={require("../../images/1.webp")} alt="main-img" />
 						</div>
 					</div>
 				</NavLink>

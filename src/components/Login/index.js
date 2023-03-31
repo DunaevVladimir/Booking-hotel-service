@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from '../Registration/Registration.module.css';
+import '../../styles/container-center.css';
+import '../../styles/form.scss';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
-export default function NLogin() {
+export default function Login() {
 	const {
 		register,
 		formState: {
@@ -37,49 +38,47 @@ export default function NLogin() {
 	}
 
 	return (
-		<div className={styles.content} >
-			<div className={styles.container}>
-				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-					<div className={styles.item}>
-						<label className={styles.label}>
-							Почта:
-						</label>
-						<input
-							type="email"
-							{...register("email", {
-								required: "Почта не указана"
-							})}
-							className={styles.input}
-							placeholder="Введите email"
-						/>
-						<div className={styles.error}>
-							{errors?.email && <div>{errors?.email?.message || "Поле не может быть пустым"}</div>}
-						</div>
-					</div>
-					<div className={styles.item}>
-						<label className={styles.label}>
-							Пароль:
-						</label>
-						<input
-							type="password"
-							{...register("password", {
-								required: "Введите пароль"
-							})}
-							className={styles.input}
-							placeholder="Введите пароль"
-						/>
-						<div className={styles.error}>
-							{errors?.password && <div>{errors?.password?.message || "Поле не может быть пустым"}</div>}
-						</div>
-					</div>
+		<div className="container-center">
+			<form className="form" onSubmit={handleSubmit(onSubmit)}>
+				<div className="form__item">
+					<label className="form__label">
+						Почта:
+					</label>
+					<input
+						type="email"
+						{...register("email", {
+							required: "Почта не указана"
+						})}
+						className="form__input"
+						placeholder="Введите email"
+					/>
+					{errors?.email && <div className="form__error">{errors?.email?.message || "Поле не может быть пустым"}</div>}
+				</div>
+				<div className="form__item">
+					<label className="form__label">
+						Пароль:
+					</label>
+					<input
+						type="password"
+						{...register("password", {
+							required: "Введите пароль"
+						})}
+						className="form__input"
+						placeholder="Введите пароль"
+					/>
+					{errors?.password && <div className="form__error">{errors?.password?.message || "Поле не может быть пустым"}</div>}
+				</div>
+				<div className='form__item'>
 					<Button type="submit">Войти</Button>
-					<Link section to="/registration" className={styles.link}>
+				</div>
+				<div className='form__item'>
+					<Link section to="/registration">
 						<Button>
 							Зарегистрироваться
 						</Button>
 					</Link>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	);
 }

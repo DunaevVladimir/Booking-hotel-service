@@ -1,0 +1,27 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		&__label {
+			color:rgb(199, 188, 88);
+		}
+
+		&__input {
+			padding: 8px 10px;
+			outline: none;
+			&::placeholder {
+				color: rgb(180, 180, 180);
+			}
+		}
+
+		&__error {
+			color: red;
+		}
+}

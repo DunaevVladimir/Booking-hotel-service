@@ -33,7 +33,6 @@ export default function Home() {
 			appartment: appartment === true ? { type: 'квартиры' } : {},
 			room: room === true ? { type: 'комната' } : {},
 		};
-		console.log(filterSetting);
 		fetch("http://localhost:5000/filter", {
 			method: "POST",
 			crossDomain: true,

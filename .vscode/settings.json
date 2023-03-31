@@ -1,0 +1,7 @@
+{
+	"ecsstractor_port.attributes": "class",
+	"ecsstractor_tsx_port.attributes": "className",
+	"ecsstractor_tsx_port.bem_nesting": true,
+	"ecsstractor_port.add_comment": false,
+	"ecsstractor_tsx_port.add_comment": false
+}

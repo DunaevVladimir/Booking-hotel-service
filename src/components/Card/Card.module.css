@@ -3,7 +3,7 @@
 	flex-direction: column;
 	border-radius: 5px;
 	justify-content: center;
-	align-items: start;
+	align-items: flex-start;
 }
 
 .gallery {

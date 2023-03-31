@@ -21,7 +21,7 @@ export default function Card() {
 			.then((data) => {
 				setCard(data);
 			})
-	}, []);
+	}, [id]);
 
 	return (
 		<div className={styles.wrapper}>
@@ -29,17 +29,17 @@ export default function Card() {
 				<div className={styles.title}>{card.title}</div>
 				<div className={styles.gallery}>
 					<div className={styles.mainimage}>
-						<img className={styles.img} src={require("../../images/1.webp")} />
+						<img className={styles.img} src={require("../../images/1.webp")} alt="main-img" />
 					</div>
 					<div className={styles.smallimages}>
 						<div className={styles.smallimage}>
-							<img className={styles.img} src={require("../../images/2.webp")} />
+							<img className={styles.img} src={require("../../images/2.webp")} alt="gallery-img" />
 						</div>
 						<div className={styles.smallimage}>
-							<img className={styles.img} src={require("../../images/3.webp")} />
+							<img className={styles.img} src={require("../../images/3.webp")} alt="gallery-img" />
 						</div>
 						<div className={styles.smallimage}>
-							<img className={styles.img} src={require("../../images/4.webp")} />
+							<img className={styles.img} src={require("../../images/4.webp")} alt="gallery-img" />
 						</div>
 					</div>
 				</div>

@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './Registration.module.css';
+import '../../styles/container-center.css';
+import '../../styles/form.scss';
 import Button from '../Button';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useForm } from 'react-hook-form';
 
-export default function NRegistration() {
+export default function Registration() {
 	const {
 		register,
 		formState: {
@@ -41,111 +42,104 @@ export default function NRegistration() {
 	}
 
 	return (
-		<div className={styles.content} >
-			<div className={styles.container}>
-				<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-					<div className={styles.item}>
-						<label className={styles.label}>
-							Имя:
-						</label>
-						<input
-							type="text"
-							{...register("name", {
-								required: true,
-								minLength: {
-									value: 1,
-									message: "Имя не должно быть пустым",
-								}
-							})}
-							className={styles.input}
-						/>
-						<div className={styles.error}>
-							{errors?.name && <div>{errors?.name?.message || "Error"}</div>}
-						</div>
-					</div>
-					<div className={styles.item}>
-						<label className={styles.label}>
-							Почта:
-						</label>
-						<input
-							type="email"
-							{...register("email", {
-								required: true,
-								pattern: {
-									value: /([a-z0-9._%+-]{3,})+@([a-z0-9.-]{3,})+[.][a-z]{2,3}$/,
-									message: "Некорректный адрес почты",
-								}
-							})}
-							className={styles.input}
-						/>
-						<div className={styles.error}>
-							{errors?.email && <div>{errors?.email?.message || "Error"}</div>}
-						</div>
-					</div>
-					<div className={styles.item}>
-						<label className={styles.label}>
-							Номер телефона:
-						</label>
-						<input
-							type="tel"
-							{...register("phoneNumber", {
-								required: true,
-								pattern: {
-									value: /^[+]+79+(.{9})/,
-									message: "Некорректный номер",
-								}
-							})}
-							className={styles.input}
-						/>
-						<div className={styles.error}>
-							{errors?.phoneNumber && <div>{errors?.phoneNumber?.message || "Error"}</div>}
-						</div>
-					</div>
-					<div className={styles.item}>
-						<label className={styles.label}>
-							Пароль:
-						</label>
-						<input
-							type="password"
-							{...register("password", {
-								required: true,
-								minLength: {
-									value: 8,
-									message: "Пароль должен содержать не меньше 8 символов",
-								}
-							})}
-							className={styles.input}
-						/>
-						<div className={styles.error}>
-							{errors?.password && <div>{errors?.password?.message || "Error"}</div>}
-						</div>
-					</div>
-					<div className={styles.item}>
-						<label className={styles.label}>
-							Повторите пароль:
-						</label>
-						<input
-							type="password"
-							{...register("passwordCheck", {
-								required: true,
-								minLength: {
-									value: 8,
-									message: "Пароль должен содержать не меньше 8 символов",
-								},
-								validate: (value) =>
-									value === getValues("password") ||
-									'Пароли не совпадают',
-							})}
-							className={styles.input}
-						/>
-						<div className={styles.error}>
-							{errors?.passwordCheck && <div>{errors?.passwordCheck?.message || "Error"}</div>}
-						</div>
-					</div>
+
+		<div className="container-center">
+			<form className="form" onSubmit={handleSubmit(onSubmit)}>
+				<div className="form__item">
+					<label className="form__label">
+						Имя:
+					</label>
+					<input
+						type="text"
+						{...register("name", {
+							required: true,
+							minLength: {
+								value: 1,
+								message: "Имя не должно быть пустым",
+							}
+						})}
+						className="form__input"
+					/>
+					{errors?.name && <div className="form__error">{errors?.name?.message || "Error"}</div>}
+				</div>
+				<div className="form__item">
+					<label className="form__label">
+						Почта:
+					</label>
+					<input
+						type="email"
+						{...register("email", {
+							required: true,
+							pattern: {
+								value: /([a-z0-9._%+-]{3,})+@([a-z0-9.-]{3,})+[.][a-z]{2,3}$/,
+								message: "Некорректный адрес почты",
+							}
+						})}
+						className="form__input"
+					/>
+					{errors?.email && <div className="form__error">{errors?.email?.message || "Error"}</div>}
+				</div>
+				<div className="form__item">
+					<label className="form__label">
+						Номер телефона:
+					</label>
+					<input
+						type="tel"
+						{...register("phoneNumber", {
+							required: true,
+							pattern: {
+								value: /^[+]+79+(.{9})/,
+								message: "Некорректный номер",
+							}
+						})}
+						className="form__input"
+					/>
+					{errors?.phoneNumber && <div className="form__error">{errors?.phoneNumber?.message || "Error"}</div>}
+				</div>
+				<div className="form__item">
+					<label className="form__label">
+						Пароль:
+					</label>
+					<input
+						type="password"
+						{...register("password", {
+							required: true,
+							minLength: {
+								value: 8,
+								message: "Пароль должен содержать не меньше 8 символов",
+							}
+						})}
+						className="form__input"
+					/>
+					{errors?.password && <div className="form__error">{errors?.password?.message || "Error"}</div>}
+				</div>
+				<div className="form__item">
+					<label className="form__label">
+						Повторите пароль:
+					</label>
+					<input
+						type="password"
+						{...register("passwordCheck", {
+							required: true,
+							minLength: {
+								value: 8,
+								message: "Пароль должен содержать не меньше 8 символов",
+							},
+							validate: (value) =>
+								value === getValues("password") ||
+								'Пароли не совпадают',
+						})}
+						className="form__input"
+					/>
+					{errors?.passwordCheck && <div className="form__error">{errors?.passwordCheck?.message || "Error"}</div>}
+				</div>
+				<div className='form__item'>
 					<ReCAPTCHA sitekey='6LfDoRglAAAAAA6YnZSQ32v4i4yN4ZY5nyBm_WEo' onChange={onChange} />
+				</div>
+				<div className='form__item'>
 					<Button type="submit">Регистрация</Button>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	);
 }
